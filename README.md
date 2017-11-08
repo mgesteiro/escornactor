@@ -21,7 +21,7 @@ Abre el fichero *firmware.ino* dentro de la carpeta *firmware* con tu herramient
 ## Información
 
 * Más información sobre el **Escornabot** en [escornabot.com](http://escornabot.com)
-* Más información sobre el **Escornactor** en [Wiki Escornabot](http://escornabot.org/wiki/index.php/Escornactor)
+* Más información sobre el **Escornactor** en la [Wiki del Escornabot](http://escornabot.org/wiki/index.php/Escornactor)
 * [IES A Xunqueira II](http://www.edu.xunta.gal/centros/iesxunqueira2/) de Pontevedra
 
 

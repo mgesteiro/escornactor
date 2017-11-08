@@ -10,7 +10,7 @@ cultivo de Marte, como parte de la **"Misión a Marte 2017"** del
 
 ## Descarga
 
-Puedes clonar el repositorio (*git clone https://github.com/mgesteiro/escornactor.git*) o bajarte un zip con el código ([código](https://github.com/mgesteiro/escornactor/archive/stable.zip)).
+Puedes clonar el repositorio (*git clone https://github.com/mgesteiro/escornactor.git*) o bajarte un zip con el código ([desde aquí](https://github.com/mgesteiro/escornactor/archive/stable.zip)).
 
 
 ## Instalación

@@ -39,6 +39,10 @@ enum
     MOVE_BACKWARD = 3,
     MOVE_LEFT = 4,
     MOVE_PAUSE = 5,
+    // escornactor
+    MOVE_ASUBIR = 7, // arado subir
+    MOVE_ABAJAR = 8, // arado bajar
+    MOVE_ARADO = 9,  // arado cambiar posición
 };
 typedef uint8_t MOVE;
 
@@ -66,6 +70,9 @@ enum
     BUTTON_LEFT = 4,
     BUTTON_GO = 5,
     BUTTON_RESET = 6,
+    // Escornactor
+    BUTTON_ASUBIR = 7,
+    BUTTON_ABAJAR = 8,
 };
 typedef uint8_t BUTTON;
 

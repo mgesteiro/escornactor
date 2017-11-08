@@ -42,6 +42,10 @@ void Bot::init()
     BLUETOOTH->init();
     #endif
 
+    #if USE_ARADO
+    ARADO.init();
+    #endif
+
     // init buzzer
     #if USE_BUZZER
     BUZZER.init();
@@ -107,7 +111,8 @@ void Bot::buttonReleased(BUTTON button)
             break;
 
         case BUTTON_DOWN:
-            _storeMove(MOVE_BACKWARD);
+            //_storeMove(MOVE_BACKWARD);
+            _storeMove(MOVE_ARADO); // cambiar posición del arado del Escornactor
             break;
 
         case BUTTON_LEFT:
@@ -120,6 +125,15 @@ void Bot::buttonReleased(BUTTON button)
 
         case BUTTON_RESET:
             PROGRAM->clear();
+            break;
+
+        // Escornactor
+        case BUTTON_ASUBIR:
+            _storeMove(MOVE_ASUBIR); // arado subir
+            break;
+
+        case BUTTON_ABAJAR:
+            _storeMove(MOVE_ABAJAR); // arado bajar
             break;
     }
 }
@@ -175,7 +189,9 @@ void Bot::_go()
     // preloaded program
     if (PROGRAM->getMoveCount() == 0 && _total_programs == 0)
     {
-        PROGRAM->addProgram(PROGRAM_ESCORNA_GREETING);
+        //PROGRAM->addProgram(PROGRAM_ESCORNA_GREETING);
+        // Escornactor
+        PROGRAM->addProgram(PROGRAM_ESCORNACTOR);
     }
 
     // only with movements

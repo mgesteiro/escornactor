@@ -40,6 +40,27 @@ const static MOVE PROGRAM_ESCORNA_GREETING[] = {
     MOVE_NONE
 };
 
+// Escornactor
+const static MOVE PROGRAM_ESCORNACTOR[] = {
+    // aramos un surco de demostración
+    MOVE_ABAJAR, //arado
+    MOVE_FORWARD,
+    MOVE_FORWARD,
+    MOVE_FORWARD,
+    MOVE_ASUBIR, //arado
+    MOVE_RIGHT,
+    MOVE_FORWARD,
+    MOVE_RIGHT,
+    MOVE_ABAJAR, //arado
+    MOVE_FORWARD,
+    MOVE_FORWARD,
+    MOVE_FORWARD,
+    MOVE_ASUBIR, //arado
+    MOVE_LEFT,
+    MOVE_LEFT,
+    MOVE_NONE
+};
+
 /**
  * \brief Container of program movements.
  * \author @caligari

@@ -24,11 +24,13 @@ See LICENSE.txt for details
 
 #include "Engine.h"
 #include "EventManager.h"
+#include "Arado.h"
 #include <Arduino.h>
 
 //////////////////////////////////////////////////////////////////////
 
 extern EventManager* EVENTS;
+extern Arado ARADO; // escornactor
 
 //////////////////////////////////////////////////////////////////////
 
@@ -93,6 +95,19 @@ void Engine::_prepareMove()
 
         case MOVE_BACKWARD:
             moveStraight(-1);
+            break;
+
+        // Escornactor
+        case MOVE_ARADO:
+            ARADO.cambiar();
+            break;
+
+        case MOVE_ASUBIR:
+            ARADO.subir();
+            break;
+
+        case MOVE_ABAJAR:
+            ARADO.bajar();
             break;
 /*
         case MOVE_PAUSE:

@@ -106,6 +106,12 @@ See LICENSE.txt for details
 
 #endif // Bluetooth
 
+// Escornactor
+#if defined(USE_ARADO)
+    #include "Arado.h"
+    Arado ARADO = Arado(ARADO_PIN);
+#endif // Escornactor
+
 
 #if USE_BUZZER
     #include "Buzzer.h"

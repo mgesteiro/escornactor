@@ -68,6 +68,10 @@ See LICENSE.txt for details
 #define USE_BLUETOOTH true
 #define BLUETOOTH_BAUDS 9600
 
+// Escornactor
+#define USE_ARADO true
+#define ARADO_PIN 12
+
 // buzzer
 #define USE_BUZZER true
 #define BUZZER_PIN 10
@@ -109,7 +113,9 @@ See LICENSE.txt for details
 // step calibration
 #define STEPPERS_STEPS_PER_SECOND 1000
 #define STEPPERS_LINE_STEPS 1738
-#define STEPPERS_TURN_STEPS 1024
+//#define STEPPERS_TURN_STEPS 1024
+// Escornactor
+#define STEPPERS_TURN_STEPS 1200 // rueda más grande
 
 #endif
 

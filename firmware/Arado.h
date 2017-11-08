@@ -1,7 +1,7 @@
-// Escornabot.ino
+// Arado.h
 /*
 
-Copyright (C) 2014-2016 Escornabot - http://escornabot.com
+Copyright (C) 2014-2017 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -22,28 +22,45 @@ See LICENSE.txt for details
 
 */
 
-#include "Bot.h"
+#ifndef _ARADO_H
+#define _ARADO_H
 
-//////////////////////////////////////////////////////////////////////
+#include <stdint.h>
+#include <Servo.h>
 
-// instance
-Bot ESCORNABOT;
-
-//////////////////////////////////////////////////////////////////////
-
-void setup()
+/**
+ * \brief Mueve el servo arriba y abajo.
+ * \author @miguel
+ */
+class Arado
 {
-    ESCORNABOT.init();
-}
+public:
 
-//////////////////////////////////////////////////////////////////////
+    /**
+     * Constructor.
+     * @param pin Pin where the servo is connected
+     */
+    Arado(uint8_t pin);
 
-void loop()
-{
-    ESCORNABOT.loop();
-}
+    /**
+     * Does the hardware initialization.
+     */
+    void init();
 
-//////////////////////////////////////////////////////////////////////
+    void subir();
+    void bajar();
+    void cambiar();
 
+
+
+private:
+
+    uint8_t _pin;
+    Servo _servo;
+    uint8_t _posicion;
+
+};
+
+#endif // _ARADO_H
 
 // EOF

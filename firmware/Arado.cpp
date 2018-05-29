@@ -38,7 +38,7 @@ Arado::Arado(uint8_t pin)
 void Arado::init()
 {
     _servo.attach(_pin);
-    for(int i=0; i < 2; i++)
+    for(int i=0; i < 1; i++)
     {
         bajar();
         subir();

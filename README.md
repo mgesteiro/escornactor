@@ -17,6 +17,10 @@ Puedes clonar el repositorio (*git clone https://github.com/mgesteiro/escornacto
 
 Abre el fichero *firmware.ino* dentro de la carpeta *firmware* con tu herramienta favorita (por ejemplo el [IDE de Arduino](https://www.arduino.cc/en/Main/Software)), y programa tu **Escornactor** de la misma forma que lo harías con el *Escornabot*.
 
+## Conexiones
+
+El servo **SG90** se conecta a los pines de *GND*, *5V* y *D11* del *Arduino nano* (cables negro, rojo y naranja del servo respectivamente), aunque el pin de señal (D11) puede ser cambiado a otro (recuerda actualizar la constante *ARADO_PIN* en el fichero *Configuration.h* acordemente).
+
 
 ## Información
 

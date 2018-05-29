@@ -70,7 +70,7 @@ See LICENSE.txt for details
 
 // Escornactor
 #define USE_ARADO true
-#define ARADO_PIN 12
+#define ARADO_PIN 11
 
 // buzzer
 #define USE_BUZZER true

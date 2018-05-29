@@ -57,6 +57,7 @@ const static MOVE PROGRAM_ESCORNACTOR[] = {
     MOVE_FORWARD,
     MOVE_ASUBIR, //arado
     MOVE_LEFT,
+    MOVE_FORWARD,
     MOVE_LEFT,
     MOVE_NONE
 };

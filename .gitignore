@@ -1,4 +1,5 @@
-
 # platformio
 .pioenvs/
-
+# others
+.DS_Store
+*.FCStd1

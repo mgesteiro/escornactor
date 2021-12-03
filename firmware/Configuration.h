@@ -112,10 +112,12 @@ See LICENSE.txt for details
 
 // step calibration
 #define STEPPERS_STEPS_PER_SECOND 1000
-#define STEPPERS_LINE_STEPS 1738
+//#define STEPPERS_LINE_STEPS 1738
 //#define STEPPERS_TURN_STEPS 1024
-// Escornactor
-#define STEPPERS_TURN_STEPS 1200 // rueda más grande
+// Escornactor, wheels V2
+# define STEPPERS_LINE_STEPS 1667
+# define STEPPERS_TURN_STEPS 1133
+
 
 #endif
 
